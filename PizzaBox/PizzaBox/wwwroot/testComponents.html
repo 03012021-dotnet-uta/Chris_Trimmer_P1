@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Components</title>
+    <link rel="stylesheet" href="css/site.css" />
+</head>
+<body>
+
+    <!--
+            This is the Component listing webpage.
+            It is used to list the pizza component for testing purposes.
+     -->
+
+    <h1>Component Page</h1>
+
+
+    <form action="javascript:void(0);" method="POST" onsubmit="">
+        <label for="loginName">Name:</label>
+        <input type="text" name="loginName" id="loginName" placeholder="Name">
+        <input type="submit" value="Add">
+    </form>
+
+
+    <p id="counter"></p>
+
+    <table>
+        <tr>
+            <th>Component</th>
+            <th>Price</th>
+        </tr>
+        <tbody id="tBodyComponents"></tbody>
+    </table>
+
+
+    <script src="./js/component.js" asp-append-version="true" type="text/javascript"></script>
+
+</body>
+</html>

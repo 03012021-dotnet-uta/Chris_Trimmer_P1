@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Orders</title>
+    <link rel="stylesheet" href="css/site.css" />
+</head>
+<body>
+
+    <!--
+        This is the Order listing webpage.
+        It is used to list the orders that are componsed of
+        customer, pizza, and store id's.
+
+        Eventually data will be presented instead of the Id's.
+    -->
+
+    <h1>Orders Page</h1>
+
+    <form action="javascript:void(0);" id="myForm" name="myForm" method="POST" onsubmit="addItem()">
+        <label for="loginName">Name:</label>
+        <input type="text" name="loginName" id="loginName" placeholder="Name" />
+        <br>
+        <br>
+        <select id="pizzaSelect" name="pizzaSelect">
+            <option value="-1" selected>[Choose Pizza]</option>
+            <option value=1>Cheese</option>
+            <option value=2>Veggie</option>
+            <option value=3>Meat</option>
+        </select><br /><br><br>
+        <fieldset>
+            <legend>Store Location</legend>
+            <label for="Pittsburgh">Pittsburgh</label>
+            <input type="radio" id="pittsburgh" name="storeLocation" value="1" />
+            <label for="Tampa">Tampa</label>
+            <input type="radio" id="tampa" name="storeLocation" value="2" />
+        </fieldset>
+        <br><br>
+        <input type="submit" value="Submit" />
+    </form>
+    <br />
+    <p id="counter"></p>
+    <br />
+    <table>
+        <tr>
+            <th>CustomerId</th>
+            <th>PizzaId</th>
+            <th>LocationId</th>
+        </tr>
+        <tbody id="tBodyOrders"></tbody>
+    </table>
+
+
+    <!--<form action="javascript:void(0);" method="POST" onsubmit="addItem()">
+        <label for="loginName">Name:</label>
+        <input type="text" name="loginName" id="loginName" placeholder="Name">
+        <input type="submit" value="Add">
+    </form>-->
+    <!--<h3>Add</h3>
+    <form action="javascript:void(0);" method="POST" onsubmit="addItem()">
+        <input type="text" id="add-name" placeholder="New to-do">
+        <input type="submit" value="Add">
+    </form>
+
+    <div id="editForm">
+        <h3>Edit</h3>
+        <form action="javascript:void(0);" onsubmit="updateItem()">
+            <input type="hidden" id="edit-id">
+            <input type="checkbox" id="edit-isComplete">
+            <input type="text" id="edit-name">
+            <input type="submit" value="Save">
+            <a onclick="closeInput()" aria-label="Close">&#10006;</a>
+        </form>
+    </div>
+
+    <p id="counter"></p>
+
+    <table>
+        <tr>
+            <th>Is Complete?</th>
+            <th>Name</th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tbody id="todos"></tbody>
+    </table>-->
+
+    <script src="./js/order.js" asp-append-version="true" type="text/javascript"></script>
+    <!--<script type="text/javascript">
+        getItems();
+    </script>-->
+
+</body>
+</html>
